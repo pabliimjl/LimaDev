@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - LimaDev</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="portafolio.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">LimaDev</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="index.html#servicios" class="nav-link">Servicios</a></li>
+                <li><a href="portafolio.html" class="nav-link active">Portafolio</a></li>
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-portfolio">
+        <div class="container">
+            <h1 class="page-title">Nuestro Portafolio</h1>
+            <p class="page-subtitle">Proyectos innovadores que transforman ideas en realidad</p>
+        </div>
+    </section>
+
+    <!-- Filtro -->
+    <section class="filtro-section">
+        <div class="container">
+            <div class="filtro-buttons">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="diseño">Diseño</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos Grid -->
+    <section class="proyectos-section">
+        <div class="container">
+            <div class="proyectos-grid">
+                <!-- Proyecto 1 -->
+                <div class="proyecto-card" data-category="web">
+                    <div class="proyecto-image">
+                        <div class="proyecto-placeholder">Web App</div>
+                        <div class="proyecto-overlay">
+                            <a href="#" class="view-btn">Ver Proyecto</a>
+                        </div>
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>Plataforma E-commerce</h3>
+                        <p class="proyecto-category">Desarrollo Web</p>
+                        <p class="proyecto-desc">Tienda online con carrito de compras, pagos integrados y panel de administración.</p>
+                        <div class="proyecto-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="proyecto-card" data-category="mobile">
+                    <div class="proyecto-image">
+                        <div class="proyecto-placeholder">Mobile App</div>
+                        <div class="proyecto-overlay">
+                            <a href="#" class="view-btn">Ver Proyecto</a>
+                        </div>
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>App de Fitness</h3>
+                        <p class="proyecto-category">Desarrollo Mobile</p>
+                        <p class="proyecto-desc">Aplicación para seguimiento de entrenamientos con IA y análisis de progreso.</p>
+                        <div class="proyecto-tech">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">TensorFlow</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 -->
+                <div class="proyecto-card" data-category="web">
+                    <div class="proyecto-image">
+                        <div class="proyecto-placeholder">Web App</div>
+                        <div class="proyecto-overlay">
+                            <a href="#" class="view-btn">Ver Proyecto</a>
+                        </div>
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>Dashboard Analítico</h3>
+                        <p class="proyecto-category">Desarrollo Web</p>
+                        <p class="proyecto-desc">Sistema de visualización de datos en tiempo real con gráficos interactivos.</p>
+                        <div class="proyecto-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Chart.js</span>
+                            <span class="tech-tag">WebSocket</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 4 -->
+                <div class="proyecto-card" data-category="diseño">
+                    <div class="proyecto-image">
+                        <div class="proyecto-placeholder">Diseño</div>
+                        <div class="proyecto-overlay">
+                            <a href="#" class="view-btn">Ver Proyecto</a>
+                        </div>
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>Identidad Visual - TechBrand</h3>
+                        <p class="proyecto-category">Diseño UI/UX</p>
+                        <p class="proyecto-desc">Diseño completo de identidad visual, desde logo hasta guía de estilos.</p>
+                        <div class="proyecto-tech">
+                            <span class="tech-tag">Figma</span>
+                            <span class="tech-tag">Branding</span>
+                            <span class="tech-tag">Ilustración</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 5 -->
+                <div class="proyecto-card" data-category="mobile">
+                    <div class="proyecto-image">
+                        <div class="proyecto-placeholder">Mobile App</div>
+                        <div class="proyecto-overlay">
+                            <a href="#" class="view-btn">Ver Proyecto</a>
+                        </div>
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>App de Delivery</h3>
+                        <p class="proyecto-category">Desarrollo Mobile</p>
+                        <p class="proyecto-desc">Plataforma de entrega con GPS, notificaciones en tiempo real y pagos móviles.</p>
+                        <div class="proyecto-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Google Maps</span>
+                            <span class="tech-tag">Stripe</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 6 -->
+                <div class="proyecto-card" data-category="web">
+                    <div class="proyecto-image">
+                        <div class="proyecto-placeholder">Web App</div>
+                        <div class="proyecto-overlay">
+                            <a href="#" class="view-btn">Ver Proyecto</a>
+                        </div>
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>Sistema de Gestión</h3>
+                        <p class="proyecto-category">Desarrollo Web</p>
+                        <p class="proyecto-desc">Suite empresarial para gestión de inventario, facturación y reportes.</p>
+                        <div class="proyecto-tech">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>¿Te gustaron nuestros proyectos?</h2>
+            <p>Déjanos ayudarte a crear tu próximo proyecto exitoso</p>
+            <a href="contacto.html" class="btn btn-primary btn-large">Solicitar Consulta</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>LimaDev</h4>
+                    <p>Transformando ideas en soluciones digitales innovadoras</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="portafolio.html">Portafolio</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/pabliimjl/" class="social-link">LinkedIn</a>
+                        <a href="https://github.com/pabliimjl" class="social-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 LimaDev. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot -->
+     <!--
+    <div class="chatbot-container">
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <div class="chat-header-info">
+                    <div class="chat-avatar">AI</div>
+                    <div>
+                        <h4>LimaDev AI</h4>
+                        <span class="chat-status">&#9679; En línea</span>
+                    </div>
+                </div>
+                <button class="chat-close" id="chatClose">&times;</button>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="chat-msg bot">
+                    <p>¡Hola! Soy el asistente de LimaDev 👋 ¿En qué puedo ayudarte?</p>
+                </div>
+                <div class="chat-suggestions" id="chatSuggestions">
+                    <button class="suggestion-btn">💻 Servicios web</button>
+                    <button class="suggestion-btn">📱 Apps mobile</button>
+                    <button class="suggestion-btn">💰 Precios</button>
+                    <button class="suggestion-btn">📞 Contacto</button>
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chatInput" placeholder="Escribe un mensaje..." autocomplete="off">
+                <button class="send-btn" id="sendBtn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <button class="chat-toggle" id="chatToggle" aria-label="Abrir chat">
+            <svg class="chat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+            <svg class="close-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+            <span class="chat-badge" id="chatBadge">1</span>
+        </button>
+    </div>-->
+
+    <script src="script.js"></script>
+</body>
+</html>

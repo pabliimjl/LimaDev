@@ -1,0 +1,233 @@
+/* ===== Hero Portfolio ===== */
+.hero-portfolio {
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.05), rgba(0, 255, 136, 0.05));
+    border-bottom: 1px solid var(--border-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-portfolio::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(0, 212, 255, 0.1), transparent 70%);
+    pointer-events: none;
+}
+
+.page-title {
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+    background: linear-gradient(135deg, var(--accent-color), var(--accent-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.page-subtitle {
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--text-secondary);
+    position: relative;
+    z-index: 1;
+}
+
+/* ===== Filtro ===== */
+.filtro-section {
+    padding: 2rem;
+    background-color: var(--secondary-dark);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.filtro-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--tertiary-dark);
+    color: var(--text-secondary);
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: var(--transition);
+    font-size: 1rem;
+}
+
+.filter-btn:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.filter-btn.active {
+    background: linear-gradient(135deg, var(--accent-color), var(--accent-secondary));
+    color: var(--primary-dark);
+    border-color: transparent;
+}
+
+/* ===== Proyectos Grid ===== */
+.proyectos-section {
+    padding: 4rem 2rem;
+}
+
+.proyectos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.proyecto-card {
+    background-color: var(--tertiary-dark);
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+}
+
+.proyecto-card:hover {
+    border-color: var(--accent-color);
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 212, 255, 0.2);
+}
+
+.proyecto-card.hidden {
+    display: none;
+}
+
+.proyecto-image {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(0, 255, 136, 0.1));
+    border-bottom: 1px solid var(--border-color);
+    overflow: hidden;
+}
+
+.proyecto-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.proyecto-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 212, 255, 0.15);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.proyecto-card:hover .proyecto-overlay {
+    opacity: 1;
+}
+
+.view-btn {
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, var(--accent-color), var(--accent-secondary));
+    color: var(--primary-dark);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: var(--transition);
+    display: inline-block;
+}
+
+.view-btn:hover {
+    transform: scale(1.05);
+}
+
+.proyecto-info {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    flex-grow: 1;
+}
+
+.proyecto-info h3 {
+    font-size: 1.3rem;
+    color: var(--text-primary);
+}
+
+.proyecto-category {
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    font-weight: 600;
+    margin: 0;
+}
+
+.proyecto-desc {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.proyecto-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.tech-tag {
+    padding: 0.35rem 0.8rem;
+    background-color: rgba(0, 212, 255, 0.1);
+    color: var(--accent-color);
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 1px solid rgba(0, 212, 255, 0.3);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .page-subtitle {
+        font-size: 1rem;
+    }
+
+    .proyectos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .filtro-buttons {
+        gap: 0.5rem;
+    }
+
+    .filter-btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+}
