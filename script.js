@@ -238,7 +238,7 @@ const chatBadge  = document.getElementById('chatBadge');
 // ===== Groq API Config =====
 const GROQ_API_KEY = 'REEMPLAZA_CON_TU_CLAVE_API'; // Reemplazá con tu API key de https://console.groq.com
 const GROQ_MODEL   = 'meta-llama/llama-4-scout-17b-16e-instruct';
-const GROQ_SYSTEM  = `Sos el asistente virtual de LimaDev, una empresa de desarrollo web y mobile ubicada en Buenos Aires, Argentina.
+const GROQ_SYSTEM  = `Sos el asistente virtual de LimaTec, una empresa de desarrollo web y mobile ubicada en Buenos Aires, Argentina.
 Respondé siempre en español rioplatense (tuteo con "vos", "podés", "tenés", etc.), de forma amigable, concisa y profesional.
 Información de la empresa:
 - Servicios: Desarrollo Web (React, Tailwind, Vue, Angular, Node.js), Desarrollo Mobile (React Native, Flutter), Desarrolo en Python, Java, Desarrollo IoT con Microcontroladores, Consultoría Tech.
@@ -424,4 +424,4 @@ async function chatResponder(userText) {
 }
 
 // Log de inicialización
-console.log('LimaDev - Script cargado correctamente ✓');
+console.log('LimaTec - Script cargado correctamente ✓');
